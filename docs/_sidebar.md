@@ -1,41 +1,88 @@
 - **Introduction**
-  - Purpose and content
-  - Applicable FIXM version
-- **General guidance**
-  - [FIXM Core](general-guidance/Understanding-FIXM-Core.md)
-  - [FIXM Application Libraries](general-guidance/Understanding-FIXM-Applications.md)
-  - [FIXM Extensions](general-guidance/Understanding-FIXM-Extensions.md)
-    - [Ignoring extension data](general-guidance/Ignoring-extension-data.md)
-  - [Using FIXM together with other exchange models](general-guidance/Using-FIXM-together-with-other-exchange-models.md)
-- **General encoding rules**
-  - [Date Time](general-encoding-rules/Encoding-Date-Time.md)
-  - [Geographical Positions](general-encoding-rules/Encoding-Geographical-positions.md)
-  - [References to Runway Directions](general-encoding-rules/Encoding-references-to-Runway-Directions.md)
-  - [References to published aeronautical information](general-encoding-rules/References-to-published-aeronautical-information.md)
-    - [Generic hypertext references](general-encoding-rules/Generic-hypertext-references.md)
-    - [References to Waypoints](general-encoding-rules/Encoding-references-to-Waypoints.md)
-    - [References to Navaids](general-encoding-rules/Encoding-references-to-Navaids.md)
-    - [References to Aerodromes](general-encoding-rules/Encoding-references-to-Aerodromes.md)
-    - [References to Runway Directions](general-encoding-rules/Encoding-references-to-Runway-Directions.md)
-    - [References to Enroute ATS routes](general-encoding-rules/Encoding-references-to-(Enroute)-ATS-routes.md)
-    - [References to SIDs and STARs](general-encoding-rules/Encoding-references-to-SIDs-and-STARs.md)
-    - [References to Airspace](general-encoding-rules/Encoding-references-to-Airspace.md)
-    - [References to References to ATC Units](general-encoding-rules/Encoding-references-to-References-to-(ATC)-Units.md)
-  - [Relative Points](general-encoding-rules/Encoding-Relative-Points.md)
-  - [Vertical Distances](general-encoding-rules/Encoding-Vertical-Distances.md)
-  - [Sequence numbers](general-encoding-rules/Encoding-Sequence-numbers.md)
-  - [Contact Information](general-encoding-rules/Encoding-Contact-Information.md)
-  - [General rules for data correctness](general-encoding-rules/General-rules-for-data-correctness.md)
-  - [Rules for absent data](general-encoding-rules/Rules-for-absent-data.md)
-- **FIXM in support of FF-ICE**
-  - [FF-ICE Application for FIXM](FIXM-in-support-of-FF-ICE/Understanding-the-FFICE-Application-for-FIXM.md)
-  - [FF-ICE Release 1 Services](FIXM-in-support-of-FF-ICE/The-FFICE-Release-1-Services.md)
-- **XML Samples**
-  - FIXM XML Structural Overview
-  - FIXM Samples of ATS Messages for a Full Flight Life-Cycle
-- **How-to guidance**
-  - How to create an Application Library
-  - How to create an FIXM Extension
-  - How to generate XML Schemas from a FIXM model using Sparx Enterprise Architect
-- **Project Documentation**
-  - [FIXM.aero](https://fixm.aero/)
+  - [Purpose and content](Purposeandcontent.md)
+  - [Applicable FIXM version](ApplicableFIXMversion.md)
+  - [Document terms](Documentterms.md)
+  - [How to improve this document](Howtoimprovethisdocument.md)
+  - [Acronyms and Definitions](AcronymsandDefinitions.md)
+  - [References](References.md)
+
+
+- **General Guidance on FIXM implementation**
+  - [Target audience](Targetaudience.md)
+  - [Understanding FIXM Core, the Application Libraries and the Extensions](UnderstandingFIXMCoretheApplicationLibrariesandtheExtensions.md)
+  - [Tested Development Environments](TestedDevelopmentEnvironments.md)
+  - [General encoding rules](Generalencodingrules.md)
+  - [Other Topics](OtherTopics.md)
+
+
+- **Using FIXM in Support of FF-ICE**
+  - [Target audience](Targetaudience.md)
+  - [The FF-ICE Application Library for FIXM](TheFFICEApplicationLibraryforFIXM.md)
+  - [FF-ICE Message Templates](FFICEMessageTemplates.md)
+  - [FF-ICER1 Services Description Example](FFICER1ServicesDescriptionExample.md)
+  - [XML Samples](XMLSamples.md)
+  - [ Extensions and Restrictions](ExtensionsandRestrictions.md)
+  - [Translating FF-ICE FIXM Messages to ATS Messages](TranslatingFFICEFIXMMessagestoATSMessages.md)
+
+
+- **Using FIXM for other use cases**
+  - [Using FIXM Core without an Application Library](UsingFIXMCorewithoutanApplicationLibrary.md)
+  - [Using FIXM Core with an Application Library](UsingFIXMCorewithanApplicationLibrary.md)
+  - [Using FIXM Core with an Extension](UsingFIXMCorewithanExtension.md)
+
+
+- **FIXM XML Samples**
+  - [FIXM XML Structural Overview](FIXMXMLStructuralOverview.md)
+  - [FIXM Samples of Uncorrelated ATS Messages](FIXMSamplesofUncorrelatedATSMessages.md)
+  - [FIXM Samples of ATS Messages for a Full Flight Life-Cycle](FIXMSamplesofATSMessagesforaFullFlightLifeCycle.md)
+  - [FIXM Samples of 4DT Data](FIXMSamplesof4DTData.md)
+
+
+- **How to create an Application Library**
+  - [Initial Download and Setup](InitialDownloadandSetup.md)
+  - [Create an Application Package](CreateanApplicationPackage.md)
+  - [Create Application Content](CreateApplicationContent.md)
+  - [Create Templates](CreateTemplates.md)
+  - [Generate the Application Schemas](GeneratetheApplicationSchemas.md)
+  - [Post-Process the Application Schemas](PostProcesstheApplicationSchemas.md)
+  - [Sample XML](SampleXML.md)
+
+
+- **How to create a FIXM Extension**
+  - [Initial Download and Setup](InitialDownloadandSetup.md)
+  - [Create a Top-Level Extensions Container](CreateaTopLevelExtensionsContainer.md)
+  - [Create an Extension Root Package](CreateanExtensionRootPackage.md)
+  - [Create Extension Content](CreateExtensionContent.md)
+  - [Generate the Extension Schemas](GeneratetheExtensionSchemas.md)
+  - [Post-Process the Extension Schemas](PostProcesstheExtensionSchemas.md)
+  - [Sample XML](SampleXML.md)
+
+
+- **How to generate XML Schemas from a FIXM model using Sparx Enterprise Architect**
+  - [Generating Schemas from the Logical Model](GeneratingSchemasfromtheLogicalModel.md)
+  - [Post-processing the FIXM Schemas](PostprocessingtheFIXMSchemas.md)
+
+
+- **FF-ICE/R1 Services Description Example – Details and Other Considerations**
+  - [Planning Service](PlanningService.md)
+  - [Filing Service](FilingService.md)
+  - [Technical assumptions](Technicalassumptions.md)
+  - [Message classification and technology selection](Messageclassificationandtechnologyselection.md)
+
+
+- **Use of Schematron**
+
+
+- **FIXM Development Tool Compatibility**
+  - [Introduction](Introduction.md)
+  - [Evaluation Environment](EvaluationEnvironment.md)
+  - [Apache Axis library and the WSDL2Java tool](ApacheAxislibraryandtheWSDL2Javatool.md)
+  - [Evaluation Results](EvaluationResults.md)
+  - [Future Testing](FutureTesting.md)
+  - [Platform Support Matrix](PlatformSupportMatrix.md)
+
+
+- **Appendix F. Developing a Basic Web Service Using FIXM (Server and Client)**
+
+
+- **ATS Message to FIXM Mapping**
