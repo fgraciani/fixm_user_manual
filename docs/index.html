@@ -31,7 +31,7 @@
       // GENERAL SETTINGS
       // -----------------------------------------------------------------
       name: 'FIXM User Manual',
-      // repo: 'https://github.com/fgraciani/testingdocsify',
+      repo: '',
       homepage: '/home.md',
       loadSidebar: true,
 
@@ -39,41 +39,16 @@
       // -----------------------------------------------------------------
       auto2top   : true,
       maxLevel   : 3,
-      subMaxLevel: 0,
+      subMaxLevel: 3,
       externalLinkTarget: '_blank',
 
       // PLUGIN SETTINGS
       // -----------------------------------------------------------------
       search: {
-        depth      : 3,
+        depth      : 9,
         noData     : 'No matches found.',
         placeholder: 'Enter search text here...'
       },
-
-      // CUSTOM PLUGINS
-      // -----------------------------------------------------------------
-      plugins: [
-        function (hook, vm) {
-          hook.beforeEach(function (html) {
-            if (/githubusercontent\.com/.test(vm.route.file)) {
-              url = vm.route.file
-                .replace('raw.githubusercontent.com', 'github.com')
-                .replace(/\/master/, '/raw/master')
-            } else {
-              url = 'https://github.com/fgraciani/testingdocsify/tree/master/docs/' + vm.route.file
-            }
-            //var editHtml = '[:memo: Edit this Page on GitHub](' + url + ')\n'
-
-            // Adjust GitHub displayable image URL format to also work in Docsify
-            html = html.replace(new RegExp("../assets/images", 'ig'), "assets/images");
-            html = html.replace(new RegExp("hlepori/fixm_test/blob", 'ig'), "hlepori/fixm_test/raw");
-
-            //return editHtml
-            //  + html
-            return html
-          })
-        }
-      ]
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
