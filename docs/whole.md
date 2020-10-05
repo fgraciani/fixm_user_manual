@@ -739,7 +739,13 @@ Example of FIXM core usage satisfying the requirement on data structure
 
 <img src=".//media/image2.png" style="width:0.26042in;height:0.26042in" />
 
-<span style="color:blue">
+<pre lang="xml">
+    <fx:aerodrome>
+
+    <fb:locationIndicator>EBBR</fb:locationIndicator>
+
+    </fx:aerodrome>
+</pre>
 
 ```xml
 <fx:aerodrome>
@@ -748,8 +754,6 @@ Example of FIXM core usage satisfying the requirement on data structure
 
 </fx:aerodrome>
 ```
-
-</span>
 
 This example displays an aerodrome reference involving a four-letter
 ICAO location indicator. It complies with the structural rules for
