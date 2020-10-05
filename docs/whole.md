@@ -742,7 +742,7 @@ Example of FIXM core usage satisfying the requirement on data structure
 ```xml
 <fx:aerodrome>
 
-<fb:locationIndicator>EBBR</fb:locationIndicator>
+    <fb:locationIndicator>EBBR</fb:locationIndicator>
 
 </fx:aerodrome>
 ```
