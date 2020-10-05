@@ -735,7 +735,7 @@ following:
 | **Important note**                | Being syntactically valid against the FIXM Core XML Schemas implies the FIXM Core hierarchy is respected. FIXM Core is not expected to be used only as a library of flight datatypes.                                                                                                                                           |
 | **How to check this**             | The content of a message, or relevant part thereof, validates without error against the FIXM Core XML schemas when tested / parsed by XML validation tools.                                                                                                                                                                     |
 
-?> Example of FIXM core usage satisfying the requirement on data structure
+?> Example of FIXM core usage satisfying the requirement on data structure:
 
 ```xml
 <fx:aerodrome>
@@ -749,8 +749,7 @@ This example displays an aerodrome reference involving a four-letter
 ICAO location indicator. It complies with the structural rules for
 aerodrome references defined by the FIXM Core XML schemas.
 
-!> Examples of FIXM core usage **NOT** satisfying the requirement on data
-structure
+!> Example of FIXM core usage **NOT** satisfying the requirement on data structure:
 
 ```xml
 <fx:aerodrome>
