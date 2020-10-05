@@ -735,17 +735,7 @@ following:
 | **Important note**                | Being syntactically valid against the FIXM Core XML Schemas implies the FIXM Core hierarchy is respected. FIXM Core is not expected to be used only as a library of flight datatypes.                                                                                                                                           |
 | **How to check this**             | The content of a message, or relevant part thereof, validates without error against the FIXM Core XML schemas when tested / parsed by XML validation tools.                                                                                                                                                                     |
 
-Example of FIXM core usage satisfying the requirement on data structure
-
-<img src=".//media/image2.png" style="width:0.26042in;height:0.26042in" />
-
-<pre lang="xml">
-    <fx:aerodrome>
-
-    <fb:locationIndicator>EBBR</fb:locationIndicator>
-
-    </fx:aerodrome>
-</pre>
+?> Example of FIXM core usage satisfying the requirement on data structure
 
 ```xml
 <fx:aerodrome>
@@ -759,14 +749,16 @@ This example displays an aerodrome reference involving a four-letter
 ICAO location indicator. It complies with the structural rules for
 aerodrome references defined by the FIXM Core XML schemas.
 
-Examples of FIXM core usage **NOT** satisfying the requirement on data
+!> Examples of FIXM core usage **NOT** satisfying the requirement on data
 structure
 
-> <img src=".//media/image3.png" style="width:0.25in;height:0.25in" />&lt;fx:aerodrome&gt;
->
-> &lt;fb:locationIndicator&gt;BRU&lt;/fb:locationIndicator&gt;
->
-> &lt;/fx:aerodrome&gt;
+```xml
+<fx:aerodrome>
+
+    <fb:locationIndicator>BRU</fb:locationIndicator>
+
+</fx:aerodrome>
+```
 
 This example displays an aerodrome reference based on property
 locationIndicator. The value “BRU” does not respect the pattern
