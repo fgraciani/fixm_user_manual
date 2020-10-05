@@ -738,6 +738,7 @@ following:
 Example of FIXM core usage satisfying the requirement on data structure
 
 <img src=".//media/image2.png" style="width:0.26042in;height:0.26042in" />
+
 ```xml
 &lt;fx:aerodrome&gt;
 
