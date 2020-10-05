@@ -740,11 +740,11 @@ Example of FIXM core usage satisfying the requirement on data structure
 <img src=".//media/image2.png" style="width:0.26042in;height:0.26042in" />
 
 ```xml
-&lt;fx:aerodrome&gt;
+<fx:aerodrome>
 
-&lt;fb:locationIndicator&gt;EBBR&lt;/fb:locationIndicator&gt;
+<fb:locationIndicator>EBBR</fb:locationIndicator>
 
-&lt;/fx:aerodrome&gt;
+</fx:aerodrome>
 ```
 
 This example displays an aerodrome reference involving a four-letter
