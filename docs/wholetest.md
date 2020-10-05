@@ -186,31 +186,28 @@ the FIXM Secretariat (<fixm.secretariat@eurocontrol.int>).
 
 ## References
 
-> **<u>FIXM references</u>**
+**<u>FIXM references</u>**
 
-1.  [FIXM 4.1.0 Core](https://www.fixm.aero/fixm_410.pl), including the
-    > FIXM 4.1.0 Core XML Schemas: [Zip
-    > archive](https://www.fixm.aero/releases/FIXM-4.1.0/FIXM_Core_v4_1_0_Schemas.zip)
-    > & [Schema
-    > documentation](https://www.fixm.aero/releases/FIXM-4.1.0/doc/schema_documentation_core/index.html)
-
+1. [FIXM 4.1.0 Core][1], including the
+    - [FIXM 4.1.0 Core XML Schemas][1.1] (Zip archive)
+    - [Schema documentation][1.2]
 2.  FIXM 4.1.0 XML samples
+3.  [FIXM Strategy v1.1][3]
+4.  [FIXM 4.1.0 Modelling Best Practices][4]
+5.  [FIXM web site][5]
+6.  [FIXM Work Area][6]
+7.  [US NAS extension to FIXM 4.1.0][7]
 
-3.  [FIXM Strategy
-    > v1.1](https://www.fixm.aero/documents/FIXM%20Strategy.pdf)
+[1]: https://www.fixm.aero/fixm_410.pl
+[1.1]: https://www.fixm.aero/releases/FIXM-4.1.0/FIXM_Core_v4_1_0_Schemas.zip
+[1.2]: https://www.fixm.aero/releases/FIXM-4.1.0/doc/schema_documentation_core/index.html
+[3]: https://www.fixm.aero/documents/FIXM%20Strategy.pdf
+[4]: https://www.fixm.aero/releases/FIXM-4.1.0/FIXM_Core_v4_1_0_Modelling_Best_Practices.pdf
+[5]: http://www.FIXM.aero
+[6]: https://ost.eurocontrol.int/sites/FIXM/SitePages/Home.aspx
+[7]: https://www.fixm.aero/fixm_nas_extension_420.pl
 
-4.  [FIXM 4.1.0 Modelling Best
-    > Practices](https://www.fixm.aero/releases/FIXM-4.1.0/FIXM_Core_v4_1_0_Modelling_Best_Practices.pdf)
-
-5.  FIXM web site: [www.FIXM.aero](http://www.FIXM.aero)
-
-6.  [FIXM Work
-    > Area](https://ost.eurocontrol.int/sites/FIXM/SitePages/Home.aspx)
-
-7.  [US NAS extension to FIXM
-    > 4.1.0](https://www.fixm.aero/fixm_nas_extension_420.pl)
-
-> **<u>ICAO references</u>**
+**<u>ICAO references</u>**
 
 1.  PANS-ATM: Procedures for Air Navigation Services: Air Traffic
     > Management, ICAO Doc 4444, 16<sup>th</sup> edition
