@@ -777,51 +777,34 @@ references, the aircraft identification and the estimated off-block
 time. It also features an example XML sample that is valid against this
 schema.
 
-> <img src=".//media/image3.png" style="width:0.25in;height:0.25in" />&lt;xs:schema
-> xmlns:wrong="fixm\_as\_library\_of\_types"
-> xmlns:fx="http://www.fixm.aero/flight/4.2"
-> xmlns:fb="http://www.fixm.aero/base/4.2"\[…\] &gt;  
-> \[...\]  
-> &lt;xs:element name="FlightIdentification"
-> type="wrong:FlightIdentificationType"/&gt;  
-> &lt;xs:complexType name="FlightIdentificationType"&gt;  
-> &lt;xs:sequence&gt;  
-> &lt;xs:element name="departureAerodrome"
-> type="fb:AerodromeReferenceType"/&gt;  
-> &lt;xs:element name="arrivalAerodrome"
-> type="fb:AerodromeReferenceType"/&gt;  
-> &lt;xs:element name="ACID" type="fb:AircraftIdentificationType"/&gt;  
-> &lt;xs:element name="EOBT" type="fb:TimeType"/&gt;  
-> &lt;/xs:sequence&gt;  
-> &lt;/xs:complexType&gt;  
-> &lt;/xs:schema&gt;
->
-> <img src=".//media/image3.png" style="width:0.25in;height:0.25in" />&lt;wrong:FlightIdentification
-> xmlns:wrong=\[…\] xmlns:fb="http://www.fixm.aero/base/4.2"
-> xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
-> xs:schemaLocation=\[…\]"&gt;
->
-> &lt;wrong:departureAerodrome&gt;
->
-> &lt;fb:name&gt;LES BARAQUES&lt;/fb:name&gt;
->
-> &lt;/wrong:departureAerodrome&gt;
->
-> &lt;wrong:arrivalAerodrome&gt;
->
-> &lt;fb:name&gt;NORTHFALL MEADOW&lt;/fb:name&gt;
->
-> &lt;/wrong:arrivalAerodrome&gt;
->
-> &lt;wrong:ACID&gt;BLXI&lt;/wrong:ACID&gt;
->
-> &lt;wrong:EOBT&gt;1909-07-25T04:41:00.000Z&lt;/wrong:EOBT&gt;
->
-> &lt;/wrong:FlightIdentification&gt;
->
-> &lt;!--
-> https://en.wikipedia.org/wiki/Louis\_Bl%C3%A9riot\#1909\_Channel\_crossing
-> --&gt;
+```xml
+<xs:schema xmlns:wrong=”fixm_as_library_of_types” xmlns:fx=”http://www.fixm.aero/flight/4.2" xmlns:fb=”http://www.fixm.aero/base/4.2"\[…\] >
+[…]
+    <xs:element name=”FlightIdentification” type=”wrong:FlightIdentificationType”/>
+    <xs:complexType name=”FlightIdentificationType”>
+        <xs:sequence>
+            <xs:element name=”departureAerodrome” type=”fb:AerodromeReferenceType”/>
+            <xs:element name=”arrivalAerodrome” type=”fb:AerodromeReferenceType”/>
+            <xs:element name=”ACID” type=”fb:AircraftIdentificationType”/>
+            <xs:element name=”EOBT” type=”fb:TimeType”/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
+```
+
+```xml
+<wrong:FlightIdentification xmlns:wrong=[…] xmlns:fb=”http://www.fixm.aero/base/4.2" xmlns:xs=”http://www.w3.org/2001/XMLSchema-instance" xs:schemaLocation=[…]“>
+    <wrong:departureAerodrome>
+        <fb:name>LES BARAQUES</fb:name>
+    </wrong:departureAerodrome>
+    <wrong:arrivalAerodrome>
+        <fb:name>NORTHFALL MEADOW</fb:name>
+    </wrong:arrivalAerodrome>
+    <wrong:ACID>BLXI</wrong:ACID>
+    <wrong:EOBT>1909-07-25T04:41:00.000Z</wrong:EOBT>
+</wrong:FlightIdentification>
+<!– https://en.wikipedia.org/wiki/Louis\_Bl%C3%A9riot\#1909\_Channel\_crossing –>
+```
 
 The example schema above is not FIXM Core and is not a FIXM extension.
 It is a fictitious, standalone XML schema that defines its own hierarchy
